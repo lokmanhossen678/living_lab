@@ -18,7 +18,7 @@
               <!-- Logo (Visible on all screens) -->
               <img src="./c1-assets/logo-header.png" alt="Logo" class="w-10 h-10">
               <!-- Company Name (Hidden on mobile, visible on desktop) -->
-              <span class="text-xl font-bold hidden md:inline">Company Name</span>
+              <span class="text-xl font-bold hidden md:inline">Browse4Pets</span>
             </div>
 
             <!-- Hamburger Icon (Visible only on mobile) -->
@@ -63,125 +63,136 @@
           </div>
         </nav>
 
-        <script>
-          // JavaScript to toggle mobile menu
-          const mobileMenuButton = document.getElementById('mobile-menu-button');
-          const mobileMenu = document.getElementById('mobile-menu');
-
-          mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-          });
-        </script>
-
-
-
-
-
-
-    <!-- hero section -->
-     <Section mt-18>
-        <div class="flex">
-        <div class="flex flex-col gap gap-3">
-            <h2 class="text-lg font-bold">Pamper Your Pet, <br>
+        
+        <!-- Banner Section -->
+      <section class="pt-12 mx-5">
+          <div class="flex flex-col items-left">
+            <!-- Text Content -->
+            <div class="text-left">
+              <h1 class="text-4xl font-bold mb-4">Pamper Your Pet, <br>
                 Because They Deserve <br>
-                the Bes
-            </h2>
+                the Bes</h1>
+              <p class="text-lg mb-4">Discover a world of treats, toys, and essentials handpicked <br>
+              for your furry friends. Shop now and make tails wag with joy!</p>
+              <button class="btn btn-warning">Find a pet</button>
+            </div>
+            <!-- Image -->
+            <div class="w-full">
+              <img src="./c1-assets/cat-big.png" alt="cat Image" class="w-full">
+            </div>
+          </div>
+       </section>
 
-            <p>
-                Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!
-            </p>
-            <button class="btn btn-warning w-1/4">Find a pet</button>
+      </header>
+<!-- Section 1: Title and Cards -->
+<section class="py-12">
+  <div class="container mx-5 px-4">
+    <!-- Title -->
+    <h2 class="text-3xl font-bold text-left ml-5 mb-8">Browse By Categories</h2>
+
+    <!-- Cards Grid -->
+    <div class="flex flex-nowrap justify-center gap-6">
+      <!-- Card 1 -->
+      <div class="card w-full sm:w-[45%] md:w-[30%] lg:w-[22%] bg-[#F9DF8A] shadow-xl">
+        <figure class="px-4 pt-4">
+          <div class="avatar">
+            <div class="w-24 rounded-full">
+              <img src="./c1-assets/dog-cartoon.png" alt="Avatar" />
+            </div>
+          </div>
+        </figure>
+        <div class="card-body items-center text-center">
+          <h3 class="card-title">Dog</h3>
+          <p>3 items</p>
         </div>
-        <div>
-            <img src="./c1-assets/cat-big.png" alt="">
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card w-full sm:w-[45%] md:w-[30%] lg:w-[22%] bg-[#F9DF8A] shadow-xl">
+        <figure class="px-4 pt-4">
+          <div class="avatar">
+            <div class="w-24 rounded-full">
+              <img src="./c1-assets/dog-cartoon.png" alt="Avatar" />
+            </div>
+          </div>
+        </figure>
+        <div class="card-body items-center text-center">
+          <h3 class="card-title">Dog</h3>
+          <p>3 items</p>
         </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card w-full sm:w-[45%] md:w-[30%] lg:w-[22%] bg-[#F9DF8A] shadow-xl">
+        <figure class="px-4 pt-4">
+          <div class="avatar">
+            <div class="w-24 rounded-full">
+              <img src="./c1-assets/dog-cartoon.png" alt="Avatar" />
+            </div>
+          </div>
+        </figure>
+        <div class="card-body items-center text-center">
+          <h3 class="card-title">Dog</h3>
+          <p>3 items</p>
         </div>
-     </Section>
-     <!-- small card section -->
-      <section class="my-6 p-4 gap-3 ">
-        <h2 class="text-lg font-bold">Browse By Categories</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 p-xl>
-            <div class="w-[200px] h-[240px] text-center">
-                <div class="card bg-base-100 shadow-xl bg-warning">
-                    <figure>
-                      <div class="avatar">
-                        <div class="w-24 rounded-full">
-                          <img src="./c1-assets/dog-cartoon.png" />
-                        </div>
-                      </div>
-                    </figure>
-                    <div class="my-3 mx-3">Dog</div>
-                    <p>3Items</p>
-                </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="card w-full sm:w-[45%] md:w-[30%] lg:w-[22%] bg-[#F9DF8A] shadow-xl">
+        <figure class="px-4 pt-4">
+          <div class="avatar">
+            <div class="w-24 rounded-full">
+              <img src="./c1-assets/dog-cartoon.png" alt="Avatar" />
             </div>
-            <div class="w-[200px] h-[240px] text-center">
-                <div class="card bg-base-100 shadow-xl bg-warning">
-                    <figure>
-                      <div class="avatar">
-                        <div class="w-24 rounded-full">
-                          <img src="./c1-assets/dog-cartoon.png" />
-                        </div>
-                      </div>
-                    </figure>
-                    <div class="my-3 mx-3">Dog</div>
-                    <p>3Items</p>
-                </div>
-            </div>
-            <div class="w-[200px] h-[240px] text-center">
-                <div class="card bg-base-100 shadow-xl bg-warning">
-                    <figure>
-                      <div class="avatar">
-                        <div class="w-24 rounded-full">
-                          <img src="./c1-assets/dog-cartoon.png" />
-                        </div>
-                      </div>
-                    </figure>
-                    <div class="my-3 mx-3">Dog</div>
-                    <p>3Items</p>
-                </div>
-            </div>
-            <div class="w-[200px] h-[240px] text-center">
-                <div class="card bg-base-100 shadow-xl bg-warning">
-                    <figure>
-                      <div class="avatar">
-                        <div class="w-24 rounded-full">
-                          <img src="./c1-assets/dog-cartoon.png" />
-                        </div>
-                      </div>
-                    </figure>
-                    <div class="my-3 mx-3">Dog</div>
-                    <p>3Items</p>
-                </div>
-            </div>
-            <div class="w-[200px] h-[240px] text-center">
-                <div class="card bg-base-100 shadow-xl bg-warning">
-                    <figure>
-                      <div class="avatar">
-                        <div class="w-24 rounded-full">
-                          <img src="./c1-assets/dog-cartoon.png" />
-                        </div>
-                      </div>
-                    </figure>
-                    <div class="my-3 mx-3">Dog</div>
-                    <p>3Items</p>
-                </div>
-            </div>
-            <div class="w-[200px] h-[240px] text-center">
-                <div class="card bg-base-100 shadow-xl bg-warning">
-                    <figure>
-                      <div class="avatar">
-                        <div class="w-24 rounded-full">
-                          <img src="./c1-assets/dog-cartoon.png" />
-                        </div>
-                      </div>
-                    </figure>
-                    <div class="my-3 mx-3">Dog</div>
-                    <p>3Items</p>
-                </div>
-            </div>
+          </div>
+        </figure>
+        <div class="card-body items-center text-center">
+          <h3 class="card-title">Dog</h3>
+          <p>3 items</p>
         </div>
-      </section>
-    </header>
-    
+      </div>
+
+      <!-- Card 5 -->
+      <div class="card w-full sm:w-[45%] md:w-[30%] lg:w-[22%] bg-[#F9DF8A] shadow-xl">
+        <figure class="px-4 pt-4">
+          <div class="avatar">
+            <div class="w-24 rounded-full">
+              <img src="./c1-assets/dog-cartoon.png" alt="Avatar" />
+            </div>
+          </div>
+        </figure>
+        <div class="card-body items-center text-center">
+          <h3 class="card-title">Dog</h3>
+          <p>3 items</p>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="card w-full sm:w-[45%] md:w-[30%] lg:w-[22%] bg-[#F9DF8A] shadow-xl">
+        <figure class="px-4 pt-4">
+          <div class="avatar">
+            <div class="w-24 rounded-full">
+              <img src="./c1-assets/dog-cartoon.png" alt="Avatar" />
+            </div>
+          </div>
+        </figure>
+        <div class="card-body items-center text-center">
+          <h3 class="card-title">Dog</h3>
+          <p>3 items</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  
+    <script>
+      // JavaScript to toggle mobile menu
+      const mobileMenuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+  
+      mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    </script> 
 </body>
 </html>
