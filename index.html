@@ -9,29 +9,74 @@
 </head>
 <body>
     <header>
-    <nav>
-        <div class=" flex text-center navbar bg-base-100">
-            <div class="flex-1">
-                 <a class="btn btn-ghost text-xl"><img src="./c1-assets/logo-header.png" alt="">Assinment_3</a>
-            </div>
-            <div>
-                <ul class=" display-inline order-1 lg:menu-horizontal bg-base-200 rounded-box">
-                    <li class="inline"><a>Item 1</a></li>
-                    <li class="inline"><a>Item 2</a></li>
-                    <li class-="inline"><a>Item 3</a></li>
-                  </ul>
-            </div>
-            <div>
-
+   
+              <!-- Navbar with Background Color -->
+        <nav class="navbar bg-base-300 p-4">
+          <div class="flex items-center justify-between w-full">
+            <!-- 1st Div: Logo and Company Name -->
+            <div class="flex items-center space-x-2">
+              <!-- Logo (Visible on all screens) -->
+              <img src="./c1-assets/logo-header.png" alt="Logo" class="w-10 h-10">
+              <!-- Company Name (Hidden on mobile, visible on desktop) -->
+              <span class="text-xl font-bold hidden md:inline">Company Name</span>
             </div>
 
-          
-        
-        </div>
+            <!-- Hamburger Icon (Visible only on mobile) -->
+            <div class="md:hidden">
+              <button class="btn btn-ghost" id="mobile-menu-button">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+              </button>
+            </div>
 
-       
-        
-    </nav>
+            <!-- 2nd Div: Menu Items (Hidden on mobile, visible on desktop) -->
+            <div class="hidden md:flex space-x-4">
+              <a href="#" class="menu-item hover:text-primary">Find a pet</a>
+              <a href="#" class="menu-item hover:text-primary">Breeds</a>
+              <a href="#" class="menu-item hover:text-primary">Contact us</a>
+            </div>
+
+            <!-- 3rd Div: Icons and Buttons (Hidden on mobile, visible on desktop) -->
+            <div class="hidden md:flex items-center space-x-4">
+              <!-- Icons -->
+              <img src="./c1-assets/icons8-notification-50.png" alt="Icon 1" class="w-6 h-6 cursor-pointer">
+              <img src="./c1-assets/icons8-search-50.png" alt="Icon 2" class="w-6 h-6 cursor-pointer">
+              <!-- Buttons -->
+              <button class="btn btn-btn">Login</button>
+              <button class="btn btn-warning">Register</button>
+            </div>
+          </div>
+
+          <!-- Mobile Menu (Hidden by default, toggled by hamburger icon) -->
+          <div class="hidden md:hidden mt-4" id="mobile-menu">
+            <a href="#" class="block py-2 hover:text-primary">Home</a>
+            <a href="#" class="block py-2 hover:text-primary">About</a>
+            <a href="#" class="block py-2 hover:text-primary">Services</a>
+            <!-- Icons and Buttons in Mobile Menu -->
+            <div class="flex items-center space-x-4 mt-2">
+              <img src="icon1.png" alt="Icon 1" class="w-6 h-6 cursor-pointer">
+              <img src="icon2.png" alt="Icon 2" class="w-6 h-6 cursor-pointer">
+              <button class="btn btn-primary">Login</button>
+              <button class="btn btn-secondary">Sign Up</button>
+            </div>
+          </div>
+        </nav>
+
+        <script>
+          // JavaScript to toggle mobile menu
+          const mobileMenuButton = document.getElementById('mobile-menu-button');
+          const mobileMenu = document.getElementById('mobile-menu');
+
+          mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+          });
+        </script>
+
+
+
+
+
 
     <!-- hero section -->
      <Section mt-18>
